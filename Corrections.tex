@@ -1,0 +1,143 @@
+\documentclass{article}
+\usepackage{amscd,amsfonts,amsmath,amsrefs,amssymb,amsthm}
+\usepackage[title]{appendix}
+\usepackage{bm}
+\usepackage{booktabs}
+\usepackage{breqn}
+\usepackage{cite}
+\usepackage{calc}
+\usepackage{cases}
+\usepackage{ctex}
+\usepackage{comment}
+\usepackage{enumerate}
+\usepackage{geometry} %页面设置
+\geometry{a4paper,left=1cm,right=1cm,top=2cm,bottom=2cm}
+%\usepackage[linktocpage=true,colorlinks,citecolor=magenta,linkcolor=blue,urlcolor=magenta]{hyperref}
+\usepackage{mathrsfs} 
+\usepackage{mathtools} 
+\usepackage{makecell} %表格相关
+\usepackage{interfaces-makecell} %表格相关
+\usepackage{longtable}
+\usepackage{multirow,multicol} %表格相关
+\usepackage{pgfmath}
+\usepackage{siunitx}
+%\usepackage[draft]{showkeys}
+\usepackage{tikz}
+\usetikzlibrary{3d, calc,fadings,decorations.pathreplacing}
+\usepackage{url}
+\usepackage{xcolor}
+\usepackage{latexsym}
+\usepackage{fancyhdr}
+\pagestyle{empty}
+\begin{document}
+	
+
+\begin{center}
+	\zihao{2} 微分几何视频勘误表
+\end{center}
+\zihao{-4}
+	说明：	
+	\begin{enumerate}
+		\item 本勘误表只涉及视频中出现的手写文字错误，不包含口误。
+		\item 本勘误表每一项为第一次出现大致时间。如果后面视频有涉及到前面的内容（如复制、回顾等），应自行作相应修改。
+		\item 某些视频中有时候对前面视频有部分修订，但可能修订不全。未修订部分参照此表。
+		\item 本勘误表不保证已更正所有错误。如有新的错误发现，将不定期更新。
+		\item 特别感谢指出错误的观看者。如有其他错误，可在b站视频下留言或私信作者。
+	\end{enumerate}	
+	\centering
+	\renewcommand\arraystretch{2}
+	\begin{longtable}{|c|c|c|c|c|}
+		\hline
+		 视频 & 时间 & 原文 & 更正 &  备注\\
+		\hline
+		 2 & 59:32 & $(x^1,x^2,x^2)$ & $(x^{1},x^{2},x^{\textcolor{red}{3}})$ &  \\
+		 \hline
+		 4 & 28:14 & 从切$=\mbox{span}\{\vec{t},\vec{n}\}$ & \textcolor{red}{密切}$=\mbox{span}\{\vec{t},\vec{n}\}$ & \\
+		\hline
+		\multirow{2}*{5} & 30:36 & $\vec{\tilde{b}}=\vec{\tilde{b}}T$  & $\vec{\tilde{b}}=\textcolor{red}{\vec{b}}T$ & \\
+		\cline{2-5}
+		& 60:54 & $\Omega^T(s_0)\Omega^T(s_0)=I_3$  & $\Omega^T(s_0)\textcolor{red}{\Omega}(s_0)=I_3$ & \\
+		\hline
+		\multirow{4}*{6} & 21:35 & \makecell[c]{$\psi^{-1}\circ\phi:U\to V$ \\ $\phi\circ\psi^{-1}:V\to U$ } & \makecell[c]{$\psi^{-1}\circ\phi:\textcolor{red}{U'}\to \textcolor{red}{V'}$ \\ $\textcolor{red}{\phi^{-1}\circ\psi}:\textcolor{red}{V'}\to \textcolor{red}{U'}$ }  & \makecell[c]{$\phi^{-1}\circ\psi$即$(\psi^{-1}\circ\phi)^{-1}$\\$U'=\phi^{-1}(W_1\cap W_2)$\\$ V'=\psi^{-1}(W_1\cap W_2)$} \\
+		\cline{2-5}
+		& 21:56 & $v^i=v(u^1,u^2)$ & $v^i=v^{\textcolor{red}{i}}(u^1,u^2)$ & \multirow{3}*{\makecell[c]{\#7 开头已部分更正，\\
+		\#7 02:20 相应修改}} \\
+		\cline{2-4} 
+		& 33:38 & $F(x,y,c)=c$ & $F(x,y,\textcolor{red}{z})=c$  &  \\
+		\cline{2-4}
+		& 42:15 & 
+		\makecell[c]{
+			$ z<0$  \quad  $ {z=-\sqrt{a-(x^{2}+z^{2})}}$ \\
+			$ y<0$  \quad  $ {y=-\sqrt{a-(x^{2}+y^{2})}}$ \\
+			 }
+		&\makecell[c]{
+				$ z<0$  \quad  $ z=-\sqrt{a-(x^{2}+\textcolor{red}{y}^{2})}$ \\
+				$ y<0$  \quad  $ y=-\sqrt{a-(x^{2}+\textcolor{red}{z}^{2})}$ \\
+			}
+		 & \\
+		\hline
+		\multirow{2}*{8} & 08:52 & $\vec{r}_{u^{2}}(0,0)\Delta u^{1}$ & $\vec{r}_{u^{2}}(0,0)\Delta u^{\textcolor{red}{2}}$ & \\
+		\cline{2-5}
+		& 36:45 & $\vec{n}_{\theta}=\dfrac{\vec{r}}{a}$ & $\vec{n}_{\theta}=\dfrac{\vec{r}_{\textcolor{red}{\theta}}}{a}$ & \\
+		\hline
+		\multirow{4}*{10} & \makecell[c]{18:33\\22:48} & $(-\vec{n}_{u^1},\vec{n}_{u^2})$ & $(-\vec{n}_{u^1},\textcolor{red}{-}\vec{n}_{u^2})$ & 出现相应地方\\
+		\cline{2-5}
+		& 63:30 & $k_1,k_2$为两个主方向 & $k_1,k_2$为两个主\textcolor{red}{曲率} & \\
+		\cline{2-5}
+		& 83:32 & $A$为$n$阶实矩阵 & $A$为$n$阶实\textcolor{red}{对称}矩阵 & \\
+		\cline{2-5}
+		& -- & Weigarten & \textcolor{red}{Weignarten} & 出现相应地方 \\
+		\hline
+		\multirow{4}*{11} & \makecell[c]{22:36\\34:22} & $\dfrac{1}{2}\vec{r}_{u^iu^i}u^iu^j$ & $\dfrac{1}{2}\vec{r}_{u^iu^{\textcolor{red}j}}u^iu^j$ & \\
+		\cline{2-5}
+		& 62:20 & $\vec{p}_0$为球心 & \textcolor{red}{$\dfrac{\vec{p}_{_0}}{k}$} 为球心 & \\
+		\cline{2-5}
+		& 67:54 & \makecell[c]{$\vec{n}_{u^{1}u^{2}}+k_{u^{2}}\vec{r}_{u^{1}}-k\vec{r}_{u^{1}u^{2}}=0$,\\
+			$\vec{n}_{u^{2}u^{1}}+k_{u^{1}}\vec{r}_{u^{2}}-k\vec{r}_{u^{2}u^{1}}=0$. } & \makecell[c]{$\vec{n}_{u^{1}u^{2}}+k_{u^{2}}\vec{r}_{u^{1}}\textcolor{red}{+}k\vec{r}_{u^{1}u^{2}}=0$,\\
+			$\vec{n}_{u^{2}u^{1}}+k_{u^{1}}\vec{r}_{u^{2}}\textcolor{red}{+}k\vec{r}_{u^{2}u^{1}}=0$. }& 不影响证明 \\
+		\cline{2-5}
+		 & 75:47 & $\vec{r}(\theta,t)=(a\cos \theta , a\sin \theta, bt)$ &  $\vec{r}(\theta,t)=\textcolor{red}{(t\cos\theta, t\sin\theta, b\theta)}$ &  正螺面参数方程\\
+		\hline
+		\multirow{2}*{12}	& 57:24 & $\sqrt{1-c^{-2ct}}$ & $\sqrt{1-\textcolor{red}{e}^{-2ct}}$ & \\
+		\cline{2-5}
+		 & \makecell[c]{67:10 \\67:56 }& $\sqrt{1-f'(u)}$ & $\sqrt{1-f{'}^{\textcolor{red}{2}}(u)}$ & \\
+		\hline
+		13 & 12:22 & $a/\sqrt{G}+b/\sqrt{E}=0$ & $a/\sqrt{G}\textcolor{red}{-}b/\sqrt{E}=0$ & \makecell[l]{后面符号相应改动，\\两族曲线对应符号$\mp$ }\\ 
+		\hline
+		\multirow{2}*{15} & 44:34 & $-\tilde{q}_{23}\quad 0 \quad 0$ & $\textcolor{red}{0\quad  -\tilde{q}_{23}} \quad 0$ & 矩阵$\tilde{Q}$第三行\\
+		\cline{2-5}
+		& 66:44 & $\binom{\omega_{1}}{\omega_{1}}$ & 
+		$\binom{\omega_{1}}{\omega_{\textcolor{red}{2}}}$ & \\
+		\hline
+		16	& 59:32 & $p$-形式（$p$-form） & $\textcolor{red}{k}$-形式（$\textcolor{red}{k}$-form） & \\
+		\hline
+		18 & 70:09 & $h_{ij}$ &  $h_{\textcolor{red}{\alpha\beta}}$ & \\
+		\hline
+		\multirow{4}*{19} & 60:12 & $u\mapsto \tilde{u}^{i}$  & $u\mapsto {\textcolor{red}{\tilde{u}}}$ & \\
+		\cline{2-5}
+		& 78:41 & $d(x,z)\le d(x,z)+d(z,y)$ & $d(x,{\textcolor{red}{y}})\le d(x,z)+d(z,y)$ & \\
+		\cline{2-5}
+		& 83:45 & $+2\tilde{F}\big(\dfrac{d\tilde{u}^{2}}{dt}\big)^{2}$ & $+2\tilde{F}{\textcolor{red}{\dfrac{d\tilde{u}^{ 1}}{dt}\dfrac{d\tilde{u}^{2}}{dt}}}$ & \#20开头相应修改 \\
+		\cline{2-5}
+		& 86:56 & $\tilde{\gamma}_1(t),\tilde{\gamma}_2(t)$在$p$处夹角 & $\tilde{\gamma}_1(t),\tilde{\gamma}_2(t)$在${\textcolor{red}{\tilde{p}=\sigma(p)}}$处夹角 & \\
+		\hline
+		\multirow{3}*{20} & 04:13 & $(d\tilde{u}^{1},du^{2})$ &  $(d\tilde{u}^{1},d{\textcolor{red}{\tilde{u}}}^{2})$ & \\
+		\cline{2-5}
+		& 18:16  & $\forall f\in V^{\ast}_i$ &  $\forall f\in V^{\ast}_{\textcolor{red}{2}}$ & \\
+		\cline{2-5}
+		& 29:46 & $\tilde{\mathrm{I}}(\sigma_{\ast}(v),\sigma_{\ast}(v))$ & $\tilde{\mathrm{I}}(\sigma_{\ast}(v),\sigma_{\ast}({\textcolor{red}{w}}))$ & \\
+		\hline
+		\multirow{3}*{21} & 14:02 & $D_{v_1+v_2}X=D_{v_1+v_2}X$ & $D_{v_1+v_2}X=\textcolor{red}{D_{v_1}X+D_{v_2}X}$ & 出现相应地方 \\
+		\cline{2-5}
+		 & 25:18 & $(Df^1+\omega_{21})e_1$ & $(Df^1+\textcolor{red}{f^{2}}\omega_{21})e_1$ & \\
+		\cline{2-5}
+		& 27:47 &
+		 \makecell[c]{$\phantom{+}(Df^1+\omega_{21})(\vec{w})e_1$\\$+(Df^2+\omega_{12})(\vec{w})e_2$} & \makecell[c]{$\phantom{+}(Df^1+\textcolor{red}{f^{2}}\omega_{21})(\vec{w})e_1$\\$+(Df^2+\textcolor{red}{f^{1}}\omega_{12})(\vec{w})e_2$} & \\
+		\hline
+		22 & 01:32 & $\mathrm{I}=Edudv+Gdvdv$ & $\mathrm{I}=Edud{\textcolor{red}{u}}+Gdvdv$ & \\
+		\hline
+		23 & 81:17 & $+\rho\,\dfrac{1}{\sqrt{\det(g_{\alpha\beta})}}$ & $+\rho\,{\textcolor{red}{\dfrac{1}{2}}}\dfrac{1}{\sqrt{\det(g_{\alpha\beta})}}$ & 不影响结论 \\
+		\hline
+	\end{longtable}
+
+\end{document}
