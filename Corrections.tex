@@ -30,8 +30,6 @@
 \usepackage{fancyhdr}
 \pagestyle{empty}
 \begin{document}
-	
-
 \begin{center}
 	\zihao{2} 微分几何视频勘误表
 \end{center}
@@ -44,8 +42,24 @@
 		\item 本勘误表不保证已更正所有错误。如有新的错误发现，将不定期更新。
 		\item 特别感谢指出错误的观看者。如有其他错误，可在b站视频下留言或私信作者。
 	\end{enumerate}	
-	\centering
+\rule[5pt]{\textwidth}{1pt}
+
+\noindent {\zihao{4}[\#16, 25:00--26:30]} 由二次型相等\textcolor{red}{不能直接推出}$P^{T}BP=h$，所以接下来也\textcolor{red}{不能}推出$B=(P^{-1})^{T}hP^{-1}$及$B$对称。这里有两种解决方法：
+
+（一） \textcolor{red}{先承认$B$对称}，证明放到后面第4.5.2节[\#17, 12:00--14:30]（用到结构方程和Cartan引理）。则\textcolor{red}{在$B$对称的假定下}，可以从二次型相等推出$P^{T}BP=h$，进而$B=(P^{-1})^{T}hP^{-1}$。但是这里要注意，因为我们先承认了$B$是对称矩阵，所以也不能再从$P^{T}BP=h$推出$B$对称，否则就循环论证了。
+
+（二）\textcolor{red}{避开二次型}，直接从运动方程和Weingarten变换证明。由$$(e_1,e_2)\binom{\omega_{13}}{\omega_{23}}=(e_1,e_2)B\binom{\omega_1}{\omega_2}=\textcolor{red}{-de_3=-d\vec{n}}=-(\vec{n}_{u^1},\vec{n}_{u^2})\binom{du^1}{du^2}=(\vec{r}_{u^1},\vec{r}_{u^2})A\binom{du^1}{du^2},$$
+再用$(e_1,e_2)=(\vec{r}_{u^1},\vec{r}_{u^2})P^{-1},\binom{\omega_1}{\omega_2}=P\binom{du^1}{du^2},A=g^{-1}h, P^{T}P=g$等关系可推出$B=PAP^{-1}=(P^{-1})^{T}hP^{-1}$，从而$B$对称，且$B$与$A$相似。
+	
+	
+
+	
+	
+\begin{center}
 	\renewcommand\arraystretch{2}
+	
+	
+	
 	\begin{longtable}{|c|c|c|c|c|}
 		\hline
 		 视频 & 时间 & 原文 & 更正 &  备注\\
@@ -139,5 +153,5 @@
 		23 & 81:17 & $+\rho\,\dfrac{1}{\sqrt{\det(g_{\alpha\beta})}}$ & $+\rho\,{\textcolor{red}{\dfrac{1}{2}}}\dfrac{1}{\sqrt{\det(g_{\alpha\beta})}}$ & 不影响结论 \\
 		\hline
 	\end{longtable}
-
+\end{center}
 \end{document}
